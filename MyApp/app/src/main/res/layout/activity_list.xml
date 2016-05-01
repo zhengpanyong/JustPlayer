@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zu.myapp.activity.MainActivity"
+
+    style="@style/Theme.AppCompat.Light.NoActionBar"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:id="@+id/title_bar"
+
+        android:background="@color/basic_color">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/all_music"
+            android:background="@drawable/image_button_selector"
+
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/switch_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/switch_button"
+
+            android:id="@+id/title"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+
+            android:text="all music"
+            android:gravity="center_vertical" />
+
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+
+            android:background="@drawable/image_button_selector"
+
+            android:clickable="true"
+
+            android:src="@drawable/search"
+            android:id="@+id/main_search_button"
+            android:layout_alignParentRight="true"
+
+            android:scaleType="fitCenter"/>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/song_list"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:smoothScrollbar="true"
+        android:clickable="true"
+        ></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:id="@+id/song_pic"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:id="@+id/info_bar"
+            >
+            <com.example.zu.myapp.layout.AutoScrollTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="song name"
+                android:textColor="#ff000000"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:paddingTop="5dp"
+                android:id="@+id/song_name"
+
+
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="true"/>
+            <com.example.zu.myapp.layout.AutoScrollTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="artist"
+                android:textColor="#ff222222"
+                android:gravity="center_vertical"
+                android:textSize="10sp"
+                android:paddingBottom="7dp"
+                android:id="@+id/artist"
+
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/previous"
+            android:background="@drawable/image_button_selector"
+
+            android:scaleType="fitCenter"
+            android:id="@+id/previous_button"
+
+            />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/play"
+            android:background="@drawable/image_button_selector"
+            android:scaleType="fitCenter"
+            android:id="@+id/play_button"/>
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/next"
+            android:background="@drawable/image_button_selector"
+
+            android:scaleType="fitCenter"
+            android:id="@+id/next_button"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

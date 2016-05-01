@@ -1,0 +1,34 @@
+Applications Memory Usage (kB):
+Uptime: 88453417 Realtime: 187438633
+
+** MEMINFO in pid 18881 [com.example.zu.myapp] **
+                   Pss  Private  Private  Swapped     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------
+  Native Heap    21921    21844        0     1332    36864    27342     9521
+  Dalvik Heap     5836     5684        0     5768    26335    15844    10491
+ Dalvik Other      308      308        0        0                           
+        Stack      160      160        0        0                           
+    Other dev     6683     4380      704        0                           
+     .so mmap     1678      188      204     2692                           
+    .apk mmap      143        0        4        0                           
+    .ttf mmap      318        0       72        0                           
+    .dex mmap      648        0      644        0                           
+    .oat mmap     2296        0      716        0                           
+    .art mmap     1407      432      188      112                           
+   Other mmap       21        4        0        0                           
+      Unknown      132      132        0      100                           
+        TOTAL    41551    33132     2532    10004    63199    43186    20012
+ 
+ Objects
+               Views:      108         ViewRootImpl:        0
+         AppContexts:        3           Activities:        0
+              Assets:        2        AssetManagers:        2
+       Local Binders:       10        Proxy Binders:       19
+       Parcel memory:        3         Parcel count:       12
+    Death Recipients:        0      OpenSSL Sockets:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 

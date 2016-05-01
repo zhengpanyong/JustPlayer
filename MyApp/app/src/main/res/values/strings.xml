@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Just Player</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="all_music">所有音乐</string>
+    <string name="articles">艺术家</string>
+    <string name="settings">设置</string>
+    <string name="exit">退出</string>
+    <drawable name="button_pressed">#88888888</drawable>
+    <drawable name="button_normal">#00000000</drawable>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zu.myapp.activity.SearchActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/basic_color"
+        android:id="@+id/search_status_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/basic_color">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="搜索本地歌曲"
+            android:id="@+id/search_text"
+            android:textColor="#ffffffff"
+            android:textColorHint="#ff888888"
+            android:textSize="17sp"
+            android:paddingLeft="10dp"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/image_button_selector"
+            android:src="@drawable/search"
+            android:scaleType="fitCenter"
+            android:id="@+id/search_button_in_search"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_result_list"></ListView>
+
+</LinearLayout>

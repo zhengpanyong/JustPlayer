@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="30"
+        android:background="#ff000000"
+        android:scaleType="centerCrop"
+        android:id="@+id/play_activity_background"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="#00000000"
+        android:id="@+id/play_activity_layout"
+
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#00000000"
+            android:id="@+id/status_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#00000000"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/image_button_selector"
+                android:src="@drawable/play_activity_back"
+                android:id="@+id/play_activity_back"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+                <com.example.zu.myapp.layout.AutoScrollTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:text="song name"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffffff"
+                    android:textSize="17sp"
+                    android:singleLine="true"
+                    android:id="@+id/play_activity_song_name"/>
+                <com.example.zu.myapp.layout.AutoScrollTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="artist"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffffff"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:id="@+id/play_activity_artist"/>
+            </LinearLayout>
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:padding="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/image_button_selector"
+                android:id="@+id/play_activity_repeat_mode"
+                />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:id="@+id/play_activity_view_pager">
+
+            </android.support.v4.view.ViewPager>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:paddingLeft="5dp"
+                android:id="@+id/play_activity_now_position"
+                android:text="4:30"/>
+            <SeekBar
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/duration_seek_bar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:paddingRight="5dp"
+                android:id="@+id/play_activity_song_duration"
+                android:text="4:30"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+
+            android:gravity="center">
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/image_button_selector"
+                android:scaleType="fitCenter"
+                android:src="@drawable/play_activity_previous"
+                android:layout_marginRight="20dp"
+                android:id="@+id/play_activity_previous_button"
+                />
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/image_button_selector"
+                android:src="@drawable/play_activity_play"
+                android:scaleType="fitCenter"
+                android:id="@+id/play_activity_play_button"/>
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/image_button_selector"
+                android:src="@drawable/play_activity_next"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/play_activity_next_button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

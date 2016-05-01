@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="baseTextColor" format="color"/>
+    <attr name="textSize" format="integer"/>
+    <attr name="isPlayingTextColor" format="color"/>
+    <declare-styleable name="CustomView1">
+        <attr name="baseTextColor"/>
+        <attr name="isPlayingTextColor"/>
+        <attr name="textSize"/>
+    </declare-styleable>
+</resources>

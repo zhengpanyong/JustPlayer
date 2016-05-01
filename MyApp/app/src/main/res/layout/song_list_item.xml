@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    >
+
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:paddingStart="20dp"
+        android:id="@+id/song_info_in_item">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="songName"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+
+            android:id="@+id/song_name_in_list"
+            android:textColor="#000000"
+            android:singleLine="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="artist"
+            android:gravity="center_vertical"
+
+            android:id="@+id/artist_in_list"
+            android:textColor="#ff222222" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/song_duration"
+        android:layout_gravity="center"
+        android:text="3分15秒"
+        android:textSize="10sp"
+        android:textColor="#ff888888"
+        android:singleLine="true"
+        android:padding="5dp" />
+
+
+
+</LinearLayout>
